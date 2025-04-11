@@ -27,6 +27,11 @@ Este projeto foi criado com o objetivo de praticar os conceitos do React e desen
 
 ---
 
+📸 Demonstração
+<p align="center">
+  <img src="./src/assets/CALCULADORA-IMC-REACT.png" alt="Calculadora de IMC" />
+</p>
+
 ## 📂 Estrutura dos dados
 
 O projeto utiliza um arquivo `data.js` com os dados das classificações de IMC.
@@ -87,11 +92,6 @@ Clone o repositório:
 - cd nome-do-projeto
 - npm install
 - npm run dev
-
-📸 Demonstração
-<p align="center">
-  <img src="./src/assets/CALCULADORA-IMC-REACT.png" alt="Calculadora de IMC" />
-</p>
 
 🤝 Contato
 
