@@ -89,3 +89,11 @@
     margin: 20px 0 10px;
 }
 
+.status {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+
