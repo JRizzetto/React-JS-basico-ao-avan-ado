@@ -12,6 +12,7 @@ import { useState } from "react";
 
 import "./App.css";
 import Step from "./components/Step";
+import SubmitForm from "./components/SubmitForm";
 
 const formTamplate = {
   name: "",
@@ -22,7 +23,8 @@ const formTamplate = {
 
 function App() {
   const [data, setData] = useState(formTamplate);
-
+  const [status, setStatus] = useState(""); // Adicionando status para feedback
+  
   const updateFieldHandler = (key, value) => {
     setData((prev) => {
       return { ...prev, [key]: value };
@@ -64,10 +66,7 @@ function App() {
                 <GrFormNext />
               </button>
             ) : (
-              <button type="button">
-                <span>Enviar</span>
-                <FiSend />
-              </button>
+              <SubmitForm data={data} setStatus={setStatus} />
             )}
           </div>
         </form>
