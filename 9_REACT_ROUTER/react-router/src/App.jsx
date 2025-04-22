@@ -1,12 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+import { Outlet } from "react-router-dom";
 
-  return <div></div>;
+// 5 - Link entrer páginas
+import Navbar from "./components/Navbar";
+import SearchForm from "./components/SearchForm";
+
+function App() {
+
+  return (
+    <div>
+      <Navbar />
+      <SearchForm />
+      <Outlet />
+      <p>Footer</p>
+    </div>
+  );
 }
 
 export default App;
