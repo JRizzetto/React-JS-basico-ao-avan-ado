@@ -1,12 +1,45 @@
-# React + Vite
+# Quiz de Programação
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de **quiz interativo de programação** desenvolvido em React, com o bundler Vite, como parte do curso *Hora de Acordar* com o Matheus Battisti.
 
-Currently, two official plugins are available:
+## 🔍 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O quiz começa com uma tela inicial, em seguida o usuário escolhe a categoria entre **HTML**, **CSS** ou **JavaScript**. Cada pergunta possui:
 
-## Expanding the ESLint configuration
+- 4 alternativas
+- 1 dica (opcional)
+- 1 opção de excluir a pergunta (mas só pode escolher entre dica ou excluir)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+No final, o usuário vê sua pontuação e pode reiniciar o jogo com uma nova categoria.
+
+## 🛠️ Tecnologias Utilizadas
+
+- [React 19](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- Context API do React
+- CSS Modules
+
+## 🧠 Funcionalidades
+
+- Navegação entre estágios do quiz com base no estado global (Context)
+- Contador de acertos
+- Sistema de pontuação final
+- Botão de reiniciar com nova categoria
+
+## 🚀 Como rodar o projeto localmente
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/quiz
+   cd quiz
+
+2. Instale as dependências:
+npm install
+
+3. Inicie o servidor de desenvolvimento:
+npm run dev
+
+4. Acesse http://localhost:5173 no navegador.
+
+🌐 Deploy
+Projeto disponível em: quiz-programacao-gamma.vercel.app
