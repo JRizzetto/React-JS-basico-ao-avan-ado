@@ -1,12 +1,67 @@
-# React + Vite
+# ⏳ Countdown - Contador Regressivo Personalizado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto feito com **React** que permite ao usuário criar uma contagem regressiva personalizada para qualquer data importante, como aniversários, virada de ano, eventos especiais e muito mais!
 
-Currently, two official plugins are available:
+## 📸 Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O usuário pode:
+- Definir um **título** para o evento.
+- Escolher uma **data futura**.
+- Selecionar uma **imagem de fundo**.
+- Alterar a **cor do tema** da contagem.
 
-## Expanding the ESLint configuration
+A aplicação então exibe uma tela estilizada mostrando **quanto tempo falta** até o evento chegar, com base nas configurações feitas.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔧 Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- `useState`, `useContext`, `Navigate`
+- `react-dom/client`
+
+---
+
+## 🧭 Como Funciona
+
+### Página 1 - Monte sua contagem regressiva
+Aqui o usuário personaliza sua contagem:
+- Título do evento
+- Data do evento
+- Imagem de fundo (background)
+- Cor do tema (ex: azul, vermelho, etc.)
+
+### Página 2 - Visualização da contagem regressiva
+Apresenta:
+- Tempo restante (dias, horas, minutos, segundos)
+- Título do evento
+- Fundo personalizado
+- Cor temática
+
+---
+
+## ▶️ Como Rodar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/countdown.git
+
+2. Acesse o diretório:
+cd countdown
+
+3. Instale as dependências:
+npm install
+
+4. Inicie o projeto:
+npm run dev
+
+
+src/
+├── assets/
+├── components/
+├── context/
+├── hooks/
+├── houkes/
+└── App.jsx
