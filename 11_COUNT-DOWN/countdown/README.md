@@ -5,6 +5,7 @@ Este é um projeto feito com **React** que permite ao usuário criar uma contage
 ## 📸 Visão Geral
 
 O usuário pode:
+
 - Definir um **título** para o evento.
 - Escolher uma **data futura**.
 - Selecionar uma **imagem de fundo**.
@@ -27,14 +28,18 @@ A aplicação então exibe uma tela estilizada mostrando **quanto tempo falta** 
 ## 🧭 Como Funciona
 
 ### Página 1 - Monte sua contagem regressiva
+
 Aqui o usuário personaliza sua contagem:
+
 - Título do evento
 - Data do evento
 - Imagem de fundo (background)
 - Cor do tema (ex: azul, vermelho, etc.)
 
 ### Página 2 - Visualização da contagem regressiva
+
 Apresenta:
+
 - Tempo restante (dias, horas, minutos, segundos)
 - Título do evento
 - Fundo personalizado
@@ -45,18 +50,20 @@ Apresenta:
 ## ▶️ Como Rodar o Projeto
 
 1. Clone este repositório:
+
    ```bash
    git clone https://github.com/seu-usuario/countdown.git
 
+   ```
+
 2. Acesse o diretório:
-cd countdown
+   cd countdown
 
 3. Instale as dependências:
-npm install
+   npm install
 
 4. Inicie o projeto:
-npm run dev
-
+   npm run dev
 
 src/
 ├── assets/

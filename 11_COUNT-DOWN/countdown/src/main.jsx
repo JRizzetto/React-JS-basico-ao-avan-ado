@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <CountDownProvider>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </CountDownProvider>
   </StrictMode>
 );

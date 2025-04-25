@@ -28,7 +28,7 @@ const Home = () => {
 
     setEvent(eventObject);
 
-    navigate("/countdown")
+    navigate("/countdown");
   };
 
   return (

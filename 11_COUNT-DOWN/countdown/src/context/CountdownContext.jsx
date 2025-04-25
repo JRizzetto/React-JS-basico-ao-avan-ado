@@ -7,10 +7,9 @@ const CountDownProvider = ({ children }) => {
 
   return (
     <CountDownContext.Provider value={{ event, setEvent }}>
-        {children}
+      {children}
     </CountDownContext.Provider>
-  )
+  );
 };
 
-
-export { CountDownContext, CountDownProvider }
+export { CountDownContext, CountDownProvider };
