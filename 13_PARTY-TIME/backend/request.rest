@@ -1,0 +1,90 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+      "name": "Decoração",
+      "description": "Escolha a decoração para sua festa, e nós a montamos.",
+      "price": 1400,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+}
+
+### 
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/680fd48ffad0d84c79e26018
+
+###
+DELETE http://localhost:3000/api/services/6810bb750078170d5509ad49
+
+###
+PUT http://localhost:3000/api/services/680fd86ed6ab95a69cf77965
+Content-Type: application/json
+
+{
+    "name": "TESTE DE ATUALIZAÇÃO",
+    "description": "Outro descrição",
+    "price": 2500,
+    "image": "https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Jefferson",
+    "description": "Uma festa de aniversário",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1745450432714-f403f3fac945?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Outro descrição",
+            "price": 3000,
+            "image": "https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Outro descrição",
+            "price": 1600,
+            "image": "https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/680feb40669933a9ab1b2d56
+
+###
+DELETE http://localhost:3000/api/parties/680feb40669933a9ab1b2d56
+
+###
+PUT http://localhost:3000/api/parties/680fed7f669933a9ab1b2d58
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Jefferson",
+    "description": "Uma festa de aniversário",
+    "budget": 10000,
+    "image": "https://images.unsplash.com/photo-1745450432714-f403f3fac945?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Outro descrição",
+            "price": 3000,
+            "image": "https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Outro descrição",
+            "price": 1600,
+            "image": "https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}

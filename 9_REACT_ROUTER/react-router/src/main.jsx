@@ -5,14 +5,21 @@ import App from "./App.jsx";
 
 import Contact from "./routes/Contact.jsx";
 
+// 2 - Página de erro
+import ErrorPage from "./routes/ErrorPage.jsx";
+
 // 1 - Configurando router
-import { createBrowserRouter, RouterProvider, Route, Navigate } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 // 3 - Componente base
 import HomeOne from "./routes/HomeOne.jsx";
 
-// 2 - Página de erro
-import ErrorPage from "./routes/ErrorPage.jsx";
+
 
 // 7 - Rota dinâmica
 import Product from "./routes/Product.jsx";
@@ -46,18 +53,18 @@ const router = createBrowserRouter([
       // 8 - Nested route
       {
         path: "/products/:id/info",
-        element: <InfoOne />
+        element: <InfoOne />,
       },
       // 9 - Search
       {
         path: "search",
-        element: <Search />
+        element: <Search />,
       },
       // 10 - Redirect
       {
         path: "teste",
-        element: <Navigate to="/"/>
-      }
+        element: <Navigate to="/" />,
+      },
     ],
   },
   // {
