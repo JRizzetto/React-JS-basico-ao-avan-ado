@@ -76,7 +76,7 @@ const EditParty = () => {
       <p>Ajuste as informações da sua festa</p>
       <form onSubmit={(e) => updateParty(e)}>
         <label>
-          <span>Nome da Festa:</span>
+          <span>Nome do Evento:</span>
           <input
             type="text"
             placeholder="Seja criativo..."

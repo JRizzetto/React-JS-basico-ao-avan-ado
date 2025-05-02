@@ -1,0 +1,17 @@
+POST http://localhost:3000/memories/
+Content-Type: multipart/form-data; boundary=boundary123
+
+--boundary123
+Content-Disposition: form-data; name="title"
+
+Algum título 2
+--boundary123
+Content-Disposition: form-data; name="description"
+
+Alguma descrição 2
+--boundary123
+Content-Disposition: form-data; name="image"; filename="minha-imagem.jpg"
+Content-Type: image/jpeg
+
+< ./C:/Users/jeffe/OneDrive/Imagens/outra.jpeg
+--boundary123--

@@ -12,3 +12,9 @@
     gap: 1rem;
     margin-bottom: 1rem;
 }
+
+.party .services-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

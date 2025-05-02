@@ -74,11 +74,12 @@ const CreateParty = () => {
 
   return (
     <div className="form-page">
-      <h2>Crie usa próxima Festa</h2>
+      <h2>Crie seu Evento</h2>
       <p>Defina o seu orçamento e escolha os serviços</p>
       <form onSubmit={(e) => createParty(e)}>
+        <i class="fa-solid fa-calendar-days"></i>
         <label>
-          <span>Nome da Festa:</span>
+          <span>Nome do Evento:</span>
           <input
             type="text"
             placeholder="Seja criativo..."
