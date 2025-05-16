@@ -67,41 +67,41 @@ export const useAuthentication = () => {
   };
 
   // login - sign in
-const login = async (data) => {
-  checkIfIsCancelled();
+  const login = async (data) => {
+    checkIfIsCancelled();
 
-  setLoading(true);
-  setError(null); // null é melhor do que false nesse contexto
+    setLoading(true);
+    setError(null); // null é melhor do que false nesse contexto
 
-  console.log("Dados recebidos para login:", data);
+    console.log("Dados recebidos para login:", data);
 
-  try {
-    await signInWithEmailAndPassword(auth, data.email, data.password);
-    setLoading(false);
-  } catch (error) {
-    let systemErrorMessage;
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, data.email, data.password);
+      setLoading(false);
+      return userCredential;
+    } catch (error) {
+      let systemErrorMessage;
 
-    // Tratamento de erros com base no código do Firebase
-    switch (error.code) {
-      case "auth/user-not-found":
-        systemErrorMessage = "Usuário não encontrado.";
-        break;
-      case "auth/wrong-password":
-        systemErrorMessage = "Senha incorreta.";
-        break;
-      case "auth/invalid-email":
-        systemErrorMessage = "E-mail inválido.";
-        break;
-      default:
-        systemErrorMessage = "Ocorreu um erro, por favor tente mais tarde.";
-        break;
+      // Tratamento de erros com base no código do Firebase
+      switch (error.code) {
+        case "auth/user-not-found":
+          systemErrorMessage = "Usuário não encontrado.";
+          break;
+        case "auth/wrong-password":
+          systemErrorMessage = "Senha incorreta.";
+          break;
+        case "auth/invalid-email":
+          systemErrorMessage = "E-mail inválido.";
+          break;
+        default:
+          systemErrorMessage = "Ocorreu um erro, por favor tente mais tarde.";
+          break;
+      }
+
+      setError(systemErrorMessage);
+      setLoading(false);
     }
-
-    setError(systemErrorMessage);
-    setLoading(false);
-  }
-};
-
+  };
 
   useEffect(() => {
     return () => setCancelled(true);
