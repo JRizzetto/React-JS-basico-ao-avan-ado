@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const dbUser = process.env.DB_USER;
-const dbPassword = process.env.DV_PASS;
+const dbPassword = process.env.DB_PASS;
 
 const conn = async () => {
   try {
@@ -11,7 +11,10 @@ const conn = async () => {
 
     return dbConn;
   } catch (error) {
-    console.log(error);
+    console.log(dbUser);
+    console.log(dbPassword);
+
+    console.log("Não foi possível a conexão com o banco" + error);
   }
 };
 
